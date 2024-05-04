@@ -1,0 +1,173 @@
+/* [전체 스타일] */
+body {
+    font-family: Arial, sans-serif; /* 전체 페이지 폰트 설정 */
+    background-color: #565252; /* 배경색 설정 */
+    margin: 0; /* 바디 마진 초기화 */
+    padding: 0; /* 바디 패딩 초기화 */
+}
+
+.container {
+    max-width: 800px; /* 컨테이너 최대 너비 설정 */
+    margin: 0 auto; /* 가운데 정렬을 위해 좌우 마진을 auto로 설정 */
+    padding: 20px; /* 컨테이너 안쪽 여백 설정 */
+}
+
+/* [헤더, 내비게이션, 섹션, 푸터] */
+header, nav, section, footer {
+    margin-bottom: 20px; /* 각 섹션들의 아래 여백 설정 */
+    background-color: #c2bcbc; /* 섹션들의 배경색 설정 */
+    padding: 20px; /* 각 섹션들의 안쪽 여백 설정 */
+    border-radius: 5px; /* 섹션들의 테두리 반경 설정 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 섹션들에 그림자 효과 추가 */
+}
+
+/* [내비게이션 메뉴] */
+nav {
+    text-align: right; /* 내비게이션 메뉴 우측 정렬 */
+}
+
+nav ul {
+    list-style-type: none; /* 내비게이션 메뉴의 리스트 스타일 제거 */
+    padding: 0; /* 내비게이션 메뉴의 패딩 초기화 */
+    margin: 0; /* 내비게이션 메뉴의 마진 초기화 */
+}
+
+nav ul li {
+    display: inline-block; /* 내비게이션 메뉴 항목들을 가로로 배치 */
+    margin-left: 10px; /* 내비게이션 메뉴 항목들 사이의 좌측 여백 설정 */
+}
+
+nav ul li a {
+    text-decoration: none; /* 내비게이션 메뉴 링크의 밑줄 제거 */
+    color: #e7dfdf; /* 내비게이션 메뉴 링크 색상 설정 */
+    transition: font-weight 0.3s, background-color 0.3s, color 0.3s; /* 링크 호버 시에 효과 설정 */
+}
+
+nav ul li a:hover {
+    font-weight: bold; /* 링크 호버 시 글자 두껍게 설정 */
+    background-color: #f0f0f0; /* 링크 호버 시 배경색 변경 */
+    color: #555; /* 링크 호버 시 글자색 변경 */
+}
+
+/* [취미, 꿈 영역] */
+.hobby-dream-container {
+    display: flex; /* 취미, 꿈 영역을 플렉스로 배치 */
+}
+
+.hobby-dream-container > div {
+    flex: 1; /* 취미, 꿈 영역을 동일한 너비로 설정 */
+}
+
+/* [시간표] */
+table {
+    width: 100%; /* 테이블 너비를 부모 요소에 맞게 설정 */
+    border-collapse: collapse; /* 테이블의 경계를 합치기 */
+}
+
+table, th, td {
+    border: 1px solid #120d0d; /* 테이블과 셀들의 테두리 설정 */
+}
+
+th, td {
+    padding: 8px; /* 셀들의 안쪽 여백 설정 */
+    text-align: center; /* 셀들의 텍스트 정렬 설정 */
+}
+
+th {
+    background-color: #f2f2f2; /* 테이블 헤더 배경색 설정 */
+}
+
+td:hover {
+    background-color: #ddd; /* 셀 호버 시 배경색 변경 */
+    color: #333; /* 셀 호버 시 글자색 변경 */
+}
+
+/* [기타] */
+header h1 {
+    color: #333; /* 헤더의 제목 글자색 설정 */
+    text-align: center; /* 헤더 제목 가운데 정렬 */
+}
+
+header h2 {
+    color: #555; /* 헤더의 부제목 글자색 설정 */
+    text-align: center; /* 헤더 부제목 가운데 정렬 */
+}
+
+/* [푸터] */
+footer p {
+    text-align: center; /* 푸터의 텍스트 가운데 정렬 */
+    color: #777; /* 푸터의 텍스트 색상 설정 */
+}
+
+footer p a {
+    color: #333; /* 푸터의 링크 색상 설정 */
+    text-decoration: none; /* 푸터의 링크 밑줄 제거 */
+    font-weight: bold; /* 푸터의 링크 글씨 두껍게 설정 */
+}
+
+footer p a:hover {
+    color: #555; /* 푸터의 링크 호버 시 색상 변경 */
+}
+
+table tr:hover {
+    background-color: #f2f2f2; /* 테이블 행 호버 시 배경색 변경 */
+    color: #333; /* 테이블 행 호버 시 글자색 변경 */
+}
+
+/* [링크] */
+a {
+    color: #139df8; /* 링크 기본 색상 설정 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+    transition: color 0.3s; /* 링크 색상 변화 애니메이션 설정 */
+}
+
+a:hover {
+    color: #3486d9; /* 링크 호버 시 색상 변경 */
+}
+
+/* [내비게이션 아이콘] */
+nav ul {
+    list-style-type: none; /* 리스트 스타일 제거: 내비게이션 메뉴의 리스트 마커를 제거. */
+    padding: 0; /* 내비게이션 메뉴의 상단과 하단에 패딩을 제거. */
+    margin: 0; /* 내비게이션 메뉴의 좌우 마진을 제거. */
+}
+
+nav ul li {
+    display: inline-block; /* 내비게이션 메뉴 항목을 가로로 배치. */
+    margin-left: 10px; /* 내비게이션 메뉴 항목들 사이의 좌측 여백을 설정. */
+    position: relative; /* 내비게이션 아이콘의 위치를 상대적으로 설정 */
+    perspective: 1000px; /* 3D 효과를 위한 원근법 설정 */
+}
+
+nav ul li a {
+    text-decoration: none; /* 링크의 밑줄을 제거. */
+    color: rgb(0, 0, 0); /* 링크의 텍스트 색상을 검은색으로 설정. */
+    padding: 10px 20px; /* 내비게이션 링크의 내부 여백 설정 */
+    background-color: var(--crl); /* 내비게이션 링크의 배경색 설정 */
+    border-radius: 5px; /* 내비게이션 링크의 테두리 반경 설정 */
+    display: block; /* 내비게이션 링크를 블록 레벨 요소로 변환 */
+    transform-style: preserve-3d; /* 내비게이션 링크에 3D 변환 유지 설정 */
+    transition: transform 0.5s; /* 링크 호버 시 변환 효과 지속 시간 설정 */
+}
+
+nav ul li:hover a {
+    transform: rotateY(20deg) scale(1.1); /* 링크 호버 시 3D 회전 및 확대 효과 설정 */
+}
+
+nav ul li::before {
+    content: attr(data-icon); /* 내비게이션 링크에 아이콘 내용 추가 */
+    font-family: 'Font Awesome 5 Free'; /* 아이콘 폰트 설정 */
+    position: absolute; /* 아이콘 위치를 절대적으로 설정 */
+    left: 10px; /* 아이콘 왼쪽 여백 설정 */
+    top: 50%; /* 아이콘 상단 여백 설정 */
+    transform: translateY(-50%); /* 아이콘 세로 중앙 정렬 */
+    color: white; /* 아이콘 색상 설정 */
+}
+
+nav ul li a:hover::before {
+    transform: rotateY(180deg); /* 아이콘 호버 시 3D 회전 효과 설정 */
+}
+
+
+     
+
